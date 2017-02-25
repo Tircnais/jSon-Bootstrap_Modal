@@ -1,0 +1,547 @@
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;/*le agrega a fuerzas el tamñao asignado por el uso de padding*/
+}
+/*Etiquetas estructurales*/
+body{
+    margin: 0;
+    /*
+    contorno alrededor dl contenido > d izq-der
+    */
+    padding: 1%;
+	margin: 0 auto;
+    box-sizing: border-box;/*le agrega a fuerzas el tamñao asignado por el uso de padding*/
+}
+
+#seleccione{
+    display: block;
+}
+.color{
+    background: #F2F3F4;
+    font-family: 'Lobster', cursive;
+}
+.texto{
+    background: #85C1E9;
+    border: 2px solid;
+    border-radius: 25px;
+    font-family: 'Bangers', cursive;
+}
+#title{
+    color: #B7950B;
+    font-family: 'Bangers', cursive;
+}
+.ir-arriba {
+    /*no se muestra el icono cuando esta al inicio*/
+	padding:20px;
+    /*relleno*/
+	background:#024959;
+	font-size:20px;
+    /*tamaño de fuente*/
+	color:#fff;
+    /*color a fuente*/
+	cursor:pointer;
+    /*para tener el efecto de enlace*/
+	position: fixed;
+    /*posicion fija*/
+	bottom:20px;
+    /*margen abajo*/
+	right:20px;
+    /*margen derecha*/
+}
+.inicio {
+    /*no se muestra el icono cuando esta al inicio*/
+	padding:20px;
+    /*relleno*/
+	background:#024959;
+	font-size:20px;
+    /*tamaño de fuente*/
+	color:#fff;
+    /*color a fuente*/
+	cursor:pointer;
+    /*para tener el efecto de enlace*/
+	position: fixed;
+    /*posicion fija*/
+	bottom:20px;
+    /*margen abajo*/
+	left:20px;
+    /*margen derecha*/
+}
+
+#content {
+    clear: both;
+    padding: 0;
+    overflow-y: scroll;
+    width: 100%;
+    height: 1045px;
+    border: 0;
+}
+
+/*forma que va ah tomar el separador*/
+hr{
+    height: 5px;
+    width: 100%;
+    background-color: darkorange;
+}
+
+/*Estilos cabecera*/
+.welcome{
+    background-color: silver;
+    color:white;
+    width: 100% auto;
+    height: 15%;
+    text-align: center;
+    padding: 0.2%;
+    box-sizing: border-box;/*le agrega a fuerzas el tamñao asignado por el uso de padding*/
+}
+
+#titulo, #subtitulo{
+    text-align: center;
+}
+
+.welcome nav {
+    width: 90%;
+	max-width: 95%;
+	margin: 20px auto;
+	background:#024959;
+    box-sizing: border-box;/*le agrega a fuerzas el tamñao asignado por el uso de padding*/
+}
+
+.menu_bar {
+	display:none;
+    /*desaparece el contenido de este DIV*/
+}
+
+.welcome nav ul {
+	overflow: hidden;
+	list-style: none;
+}
+.welcome nav ul li{
+    float: left;
+}
+
+.welcome nav ul li a {
+	color:#fff;
+	padding:15px;
+    margin-left: 0px;
+	display:block;
+	text-decoration:none;
+    box-sizing: border-box;/*le agrega a fuerzas el tamñao asignado por el uso de padding*/
+}
+
+.welcome nav ul li span {
+	margin-right:15px;
+    /*da un espacio entre el icono y el texto*/
+}
+
+.welcome nav ul li a:hover {
+	background:#037E8C;
+    /*cambia el color del link al pasar el mouse*/
+}
+
+.Introduccion{
+    background: beige;
+}
+
+.categorias{
+    background-color: aqua;
+}
+
+/*Caberaza*/
+.Introduccion h3, .Introduccion a{
+    font-size: 1.5em;
+}
+#garantia, #seguridad{
+	text-align: justify;/*justificar el texto*/
+	font-family: cursive;
+    font-size: 1em;
+}
+
+#bienvenida{
+    text-align: center;
+}
+#bienvenida a{
+    text-decoration: none;
+    /*quita el subrayado al enlace*/
+    color: black;
+    /*color a texto*/
+}
+
+/*formato a columnas*/
+#colA, #colB, #colC, #colD{
+    font-size: 1em;
+}
+/*FOOTER*/
+#colUno #nosotros, #colDos p, #colTres ul{
+    font-size: 0.8em;
+}
+
+.categorias ul li a, .categorias ul li{
+    list-style: none;
+    /*quita la viñeta a las lista de las categorias*/
+    text-decoration: none;
+    /*quita el subrayado al enlace*/
+}
+
+#colA{
+	background-image: url("img/fondoA.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen reponsiva*/
+}
+
+#colB{
+	background-image: url("img/fondoB.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+}
+
+#colC{
+	background-image: url("img/fondoC.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+    color: white;
+}
+
+#colD{
+	background-image: url("img/fondoF.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+    color: white;
+}
+#colC ul li a, #colD ul li a{
+    color: white;
+}
+p{
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1.4em;
+    color:black;	
+	text-align: justify;
+}
+
+/*Estilo para fuentes*/
+/*selector estilo para un tag*/
+h1{
+	color:blue;
+	text-align:center;
+	font-size:2,3em;
+	font-family:Arial;
+}
+
+.cuerpoPrincipal{
+    background-image: url("img/fondoPrincipal.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen reponsiva*/
+    display:block;
+}
+
+.contenedor footer{
+	font-size:1em;
+	color:#496;
+    /*
+    color a titulos del texto de pie de pagina
+    */
+	text-align:center;
+	font-weight:bold;
+    background-color: beige;
+    font-size: 1.5em;
+}
+
+#copyright {
+    margin: 0% 0% 0% 3%;
+    /*superior derecho inferior izq*/
+	display: inline-block;
+	background: #e7eae8;
+	color: #8b9790;
+    
+}
+#copyright ul li a, #copyright ul li{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*selector de estilo para una clase (acceso con .)*/
+#colUno, #titulo, #subtitulo, h3, h4, #welcome{
+	text-align: center;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.slider ul{
+    display: flex;
+    /*colocala imagen al lado*/
+    padding: 0;
+    width: 500%;
+    /*da un espacio enrtre imagenes*/
+    overflow: hidden;
+    /*quita los elementos que quedan estan fuera no se vean*/
+    animation: cambio 20s infinite;
+    /*nombre tiempo repeticion*/
+    animation-direction: alternate;
+    /*se regresa desde la ultima a la primera y vuleve a subir*/
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+/*paradas a CAMBIO*/
+@keyframes cambio{
+    /*5% el cambio de imagenes es de 1s*/
+    0%{ margin-left: 0;}
+    20%{ margin-left:0;}
+    /*la primera imagen se queda 4s*/
+    25%{ margin-left: -100%;}
+    45%{ margin-left:-100%;}
+    /*la segunda imagen se queda 4s*/
+    50%{ margin-left: -200%;}
+    70%{ margin-left:-200%;}
+    /*la segunda imagen se queda 4s*/
+}
+
+ul li a, ul li{
+    text-decoration: none;
+    /*quita el subrayado al enlace*/
+    list-style: none;
+    /*Quita el icono de lista*/
+    color: black;
+}
+
+#menuServios, #Contactos{
+    text-align: center;
+}
+
+#search{
+    background-color: azure;
+}
+/*ESTILO para la TABLA*/
+.selected{
+    cursor: pointer;
+}
+.selected:hover{
+    background-color: #0585C0;
+    color: black;
+}
+.seleccionada{
+    background-color: red;
+    color: darkorange;
+}
+
+thead{
+    background-color: deepskyblue;
+}
+.selected{
+    background-color: aquamarine;
+}
+.loadImagen{
+    width: 100%;
+}
+
+#archivoImagen{
+    background-image: url("img/fondoA.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen reponsiva*/
+}
+#results, #ajaxP{
+    background-image: url("img/fondoAjax1.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+}
+
+#ajaxO, #post{
+	background-image: url("img/fondoAjax2.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+    
+}
+#results{
+    font-family: 'Bangers', cursive;
+}
+#post{
+    font-family: 'Lobster', cursive;
+}
+#solucion{
+    font-family: 'Lobster', cursive;
+}
+#tabla{
+    font-family: 'Open Sans', arial, sans-serif;
+}
+#divTabla{
+    background-image: url("img/fondoC.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+    color: white;
+}
+#tabla{
+    background-image: url("img/fondoB.jpg");
+	background-repeat: no-repeat; /*no repite la imgen*/
+	background-attachment: fixed; /*imagen fija*/
+	background-size: cover;  /*imgen responsiva*/
+    color: black;
+}
+/*
+#archivoImagen, #divTabla, #ajaxP{
+    display: none;
+}
+*/
+
+#imgAjax{
+    width: 100%
+}
+@media screen and (max-width:800px){
+    /*cuando llega a los 800px y hace lo siguiente*/
+    main{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+	.welcome nav {
+		width: 40%;
+		height: 60%;
+		left: -100%;
+        /*desplaza el menu para despues "llamarlo"*/
+        margin-top: 0px;
+		margin-left: 8px;
+		position: fixed;
+        /*mantive el menu fijo al baja*/
+	}
+
+	.welcome nav ul li {
+        margin-left: -30px;
+        margin-right: 40px;
+        height: 50px;
+		display:block;
+        /*abarca todo el ancho q puede*/
+		float:none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+        /*se visualiza en botones y da un color*/
+	}
+    .welcome nav ul li a span{
+        margin: 20px;
+    }
+    .Introduccion{
+        opacity: 1;
+    }
+	.menu_bar {
+		display: block;
+        /*aparece el DIV osea el icono para el menu*/
+		width: 100%;
+		background: #ccc;
+	}
+	
+    .menu_bar .bt-menu {
+		display: block;
+        /*abarca todo el ancho q puede*/
+		padding: 20px;
+		background: #024959;
+        /*color para la barra de menu*/
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+        /*negrita al texto*/
+		font-size:25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+    
+	.menu_bar span {
+		float:right;
+        /*mueve el icono*/
+		font-size:40px;
+        /*tamaño del texto dentyro de la etiqueta*/
+	}
+}
+
+@media screen and (max-width:400px){
+    /*cuando llega a los 800px y hace lo siguiente*/
+    main{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+	.welcome nav {
+		width: 80%;
+		height: 60%;
+		left: -100%;
+        /*desplaza el menu para despues "llamarlo"*/
+        margin-top: 0px;
+		margin-left: 4px;
+		position: fixed;
+        /*mantive el menu fijo al baja*/
+	}
+
+	.welcome nav ul li {
+        margin-left: -40px;
+        margin-right: 90px;
+		display:block;
+        /*abarca todo el ancho q puede*/
+		float:none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+        /*se visualiza en botones y da un color*/
+	}
+    
+    .Introduccion{
+        opacity: 1;
+    }
+	.menu_bar {
+		display: block;
+        /*aparece el DIV osea el icono para el menu*/
+		width: 100%;
+		background: #ccc;
+	}
+	
+    .menu_bar .bt-menu {
+		display: block;
+        /*abarca todo el ancho q puede*/
+		padding: 20px;
+		background: #024959;
+        /*color para la barra de menu*/
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+        /*negrita al texto*/
+		font-size:25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+    
+	.menu_bar span {
+		float:right;
+        /*mueve el icono*/
+		font-size:40px;
+        /*tamaño del texto dentyro de la etiqueta*/
+	}
+    
+    .redesSociales nav ul li a{
+        float: left;
+        list-style: none;
+        text-decoration: none;
+        font-size: 0.5em;
+    }
+    .redesSociales nav ul li a spam{
+        margin: 10px;
+    }
+    
+}
